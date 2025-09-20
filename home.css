@@ -20,6 +20,29 @@
 }
 
 
+
+header .hero_section p{
+  padding-bottom: 110px;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+header .wrapper ul a{
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: 0.9rem
+}
+
+header .wrapper ul a button {
+border-radius: 20px;
+text-decoration: none;
+color:black;
+font-size: 0.9rem;
+border: none;
+}
+
+
 /* General grid layout */
 .grid_container {
   display: grid;
@@ -144,11 +167,46 @@
 }
 /*gallery ends here */
 
-/* Responsive */
+footer{ 
+   text-align: center;
+  padding: 4rem 2rem;
+  background-color: aqua;
+
+}
+
+.last a {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+
+color: var(--Green500);
+}
+
+.last ul {
+
+display: flex;
+padding-left: 525px;
+gap: 50px;
+padding-top: 20px;
+padding-bottom: 25px;
+}
+
+/* Responsiveness begins */
 @media (max-width: 768px) {
   .grid-container, 
   .testimonials-grid, 
   .pictures {
     grid-template-columns: 1fr;
   }
+  header .wrapper ul a{
+    display: none;
+  }
+  header .wrapper ul a button {
+    display: none;
+  }
+  header .wrapper{
+    
+  }
 }
+
+/*Responsiveness ends*/
